@@ -125,14 +125,13 @@ section {
   padding: 5rem 9% 5rem;
 }
 
-.home{
+.home {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 8rem;
   background: var(--bg-color);
-}
-
+  padding-top: 12rem; /* NEW LINE: push content below header */}
 .home.home-content {
   font-size: 6rem;
   font-weight: 700;
@@ -222,3 +221,113 @@ span {
 
 
 
+@media (max-width: 600px) {
+  .home {
+    flex-direction: column;
+    gap: 3rem;
+  padding: 15rem 5% 5rem; /* ⬅️ Top padding to avoid overlap */  }
+
+  .home-img img {
+    width: 70vw; /* smaller width so it fits well */
+    max-width: 300px; /* optional max size */
+  }
+
+  .home-content {
+    font-size: 4rem;
+    text-align: center;
+  }
+
+  .home-content p {
+    font-size: 1.4rem;
+  }
+
+  .social-icon a {
+    width: 3rem;
+    height: 3rem;
+    font-size: 1.5rem;
+    margin: 1.5rem 0.75rem 1.5rem 0;
+  }
+
+  .btn {
+    font-size: 1.4rem;
+    padding: 0.8rem 2rem;
+  }
+}
+/* prjects section */
+.projects {
+  background: var(--second-bg-color);
+}
+
+
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  gap: 2.5rem
+}
+
+.projects-box{
+  background: var(--main-color);
+  height: 300px;
+  border-radius: 3rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+  
+}
+
+.projects-box:hover{
+  background: var(--second-bg-color);
+  color: var(--main-color);
+  transform: scale(1.03);
+  border: 1px solid var(--main-color);
+}
+
+.projects-box .projects-info {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  max-height: 200px;
+  justify-content: center;
+  align-items: baseline;
+  padding: 5em;
+}
+
+.projects-info h4 {
+  font-size: 2.5rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.projects-info p{
+  font-size: 1.6rem;
+  font-weight: 400;
+  max-height: 100px;
+  margin: auto;
+}
+
+@media(max-width: 991px){
+  section {
+    padding: 10rem 3% 2rem;
+  }
+  .projects{
+    padding-bottom:7rem;
+  }
+}
+
+@media(max-width: 895px){
+  .projects h2{
+    margin-bottom: 3rem;
+  }
+  .projects-container{
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+
+.heading {
+  font-size: 4rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: white;
+}
