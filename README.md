@@ -28,7 +28,19 @@ I created this using **HTML**, **CSS**, and **JavaScript**, with the goal of lea
 
 ---
 
+## 🧩 Coming Soon
+
+Here are some features and sections that I’m currently working on adding:
+
+🌗 Light and dark mode toggle
+
+📱 Enhanced responsiveness across devices
+
+📄 Resume section with downloadable PDF
+
 ## 📂 How to Use / Run Locally
+
+---
 
 To run this site locally:
 
