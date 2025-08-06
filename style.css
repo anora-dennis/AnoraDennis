@@ -267,22 +267,72 @@ span {
     padding: 0.8rem 2rem;
   }
 }
-/* prjects section */
+/* Projects Section */
 .projects {
   background: var(--second-bg-color);
+  padding: 8rem 5% 4rem;
 }
-
 
 .projects-container {
   display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  align-items: center;
-  gap: 2.5rem
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 3rem;
+  align-items: stretch;
 }
 
-.btn-projects{
-  
+/* Individual Project Card */
+.projects-box {
+  background: var(--second-bg-color);
+  border: 1px solid var(--main-color);
+  border-radius: 3rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2.5rem;
+  height: auto;
+}
+
+.projects-box:hover {
+  background: var(--main-color);
+  color: white;
+  transform: scale(1.03);
+}
+
+.projects-box:hover .important-text {
+  color: black;
+}
+
+/* Project Content */
+.projects-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  text-align: left;
+}
+
+.projects-info h4 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.projects-info p {
+  font-size: 1.4rem;
+  font-weight: 400;
+  margin: 0;
+}
+
+.important-text {
+  font-weight: 600;
+  color: var(--main-color);
+}
+
+/* Project Button */
+.btn-projects {
   display: inline-block;
+  width: fit-content;
   padding: 1rem 2.8rem;
   background: var(--second-bg-color);
   border-radius: 4rem;
@@ -293,90 +343,45 @@ span {
   font-weight: 600;
   transition: 0.3s ease;
   cursor: pointer;
+  margin-top: 1.5rem;
 }
 
-.btn-projects:hover{
+.btn-projects:hover {
   transform: scale(1.03);
   background-color: var(--main-color);
   color: var(--text-color);
-  box-shadow: 0 0 25px var(--main-color);;
+  box-shadow: 0 0 25px var(--main-color);
 }
 
-.projects-box{
-  background: var(second-bg-color);
-  border: 1px solid var(--main-color);
-
-  height: 300px;
-  border-radius: 3rem;
-  cursor: pointer;
-  transition: 0.3s ease;
-  
-}
-
-.projects-box:hover{
-  background: var(--main-color);
-  color: white;
-  transform: scale(1.03);
-  .important-text{
-    color: black;
-  }
-}
-
-.projects-box .projects-info {
-  display: flex;
-  flex-direction: column;
-  text-align: left;
-  max-height: 200px;
-  justify-content: center;
-  align-items: baseline;
-}
-
-.projects-info h4 {
-  font-size: 2.5rem;
-  font-weight: 500;
-  margin-top: 10rem;
-  margin-left: 5rem;
-}
-
-.important-text{
-  font-weight: 600;
-  color: var(--main-color)
-}
-
-.projects-info p{
-  font-size: 1.6rem;
-  font-weight: 400;
-  max-height: 100px;
-  margin: auto;
-  margin-bottom: 1rem;
-  margin-left: 5rem;
-}
-
-@media(max-width: 991px){
-  section {
-    padding: 10rem 3% 2rem;
-  }
-  .projects{
-    padding-bottom:7rem;
-  }
-}
-
-@media(max-width: 895px){
-  .projects h2{
-    margin-bottom: 3rem;
-  }
-  .projects-container{
-    grid-template-columns: repeat(1, 1fr);
-  }
-}
-
+/* Section Heading */
 .heading {
   font-size: 4rem;
   font-weight: 600;
   text-align: center;
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
   color: white;
 }
+
+/* Responsive Tweaks */
+@media (max-width: 768px) {
+  .projects {
+    padding: 6rem 5% 3rem;
+  }
+
+  .projects-info h4 {
+    font-size: 1.8rem;
+  }
+
+  .projects-info p {
+    font-size: 1.3rem;
+  }
+
+  .btn-projects {
+    font-size: 1.4rem;
+    padding: 0.8rem 2rem;
+  }
+}
+
 
 /* skills section */
 .skills{
@@ -395,7 +400,7 @@ span {
 
 .skills .container .row {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   flex-wrap: wrap;
   gap: 1.8rem;
 }
