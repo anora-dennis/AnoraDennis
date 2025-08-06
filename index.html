@@ -13,17 +13,21 @@
   <header class="header">
     <a href="#" class="logo">Anora Dennis</a>
 
-    <i class="fa-solid fa-bars" class="menu-icon"></i>
+    <!-- Menu toggle checkbox -->
+    <input type="checkbox" id="menu-toggle" />
+    <label for="menu-toggle" class="menu-icon">
+      <i class="fa-solid fa-bars"></i>
+    </label>
+
     <nav class="navbar">
-      <a href="#home" class="active">Home</a>
+      <a href="#home">Home</a>
       <a href="#projects">Projects</a>
       <a href="#skills">Skills</a>
-      <a href="#education">Education</a>
-      <a href="#awards">Honours & Awards</a>
+      <a href="#education">Education & Certifications</a>
       <a href="#contact">Contact</a>
     </nav>
-    
   </header>
+
 
   <section class="home" id="home">
     <div class="home-img">
@@ -36,11 +40,11 @@
         <div class="social-icon">
           <a href="#"><i class="fa-brands fa-linkedin"></i></a>
           <a href="#"><i class="fa-brands fa-github"></i></a>
-          <a href="#"><i class="fa-brands fa-instagram"></i></a>
-          <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+          <!--<a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-tiktok"></i></a>-->
         </div>
 
-      <a href="#" class="btn">Contact Me</a>
+      <a href=#contact class="btn">Contact Me</a>
     </div>
   </section>
 
@@ -52,11 +56,31 @@
     <div class="projects-container">
       <div class="projects-box">
         <div class="projects-info">
+          <h4>Adaptive Multi-Mode Pong Game with AI Powered Opponent</h4>
+          <p>• Engineered a modular Pong game using <span class="important-text">Python (v3.10.18)</span> and <span class="important-text">Pygame Zero (v2.5.2)</span>, implementing real-time collision detection, ball physics, and paddle mechanics across multiple game modes. </p>
+       <p> • Developed an intentionally imperfect AI system to simulate human-like decision-making and maintain balanced gameplay dynamics, achieving an average tracking accuracy of <span class="important-text">81.34%</span> across sessions.</p>
+          <p>• Simulated dual-ball mechanics in hard mode, maintaining a consistently stable frame rate of <span class="important-text">61.12 FPS</span>, ensuring smooth gameplay performance.</p>
+          <a class="btn-projects" href="https://github.com/anora-dennis/AI-Pong">View Code 🚀</a>
+        </div>
+      </div>
+
+      <div class="projects-box">
+        <div class="projects-info">
+          <h4>Personal Portfolio</h4>
+          <p>• Designed and deployed a fully responsive portfolio website using <span class="important-text">HTML5</span>, <span class="important-text">CSS3</span>, and <span class="important-text">Vanilla JavaScript</span>, showcasing project highlights, contact form, and section-based navigation.</p>
+          <p>• Engineered adaptive layouts using <span class="important-text">CSS Flexbox</span> and <span class="important-text">media queries</span> to ensure consistent rendering across <span class="important-text">mobile, tablet, and desktop viewports</span>.</p>
+          <p>• Optimized site structure and content flow for performance and accessibility, deploying the project via <span class="important-text">GitHub Pages</span> with semantic markup and modular styling.</p>
+          <a class="btn-projects" href="https://github.com/anora-dennis/AnoraDennis">View Code 🚀</a>
+        </div>
+      </div>
+
+      <div class="projects-box">
+        <div class="projects-info">
           <h4>Project #1</h4>
           <p>Description of Priject #1</p>
         </div>
       </div>
-
+      <!--
       <div class="projects-box">
         <div class="projects-info">
           <h4>Project #1</h4>
@@ -77,27 +101,227 @@
           <p>Description of Priject #1</p>
         </div>
       </div>
-
-      <div class="projects-box">
-        <div class="projects-info">
-          <h4>Project #1</h4>
-          <p>Description of Priject #1</p>
-        </div>
-      </div>
-
-      <div class="projects-box">
-        <div class="projects-info">
-          <h4>Project #1</h4>
-          <p>Description of Priject #1</p>
-        </div>
-      </div>
+      -->
     </div>
   </section>
 
-  
+  <section class="skills" id="skills">
+    <h2 class="heading">
+      Skills
+    </h2>
+    <div class="container" id="skillsContainer">
+      <div class=row>
+        <div class="bar">
+          <div class="info">
+            <img src="images/html.webp" class="skills-img"\>
+            <span>HTML</span>
+          </div>
+        </div>
+        <div class="bar">
+          <div class="info">
+            <img src="images/css.webp" class="skills-img"\>
+            <span>CSS</span>
+          </div>
+        </div>
+        <div class="bar">
+          <div class="info">
+            <img src="images/js.webp" class="skills-img"\>
+            <span>Java Script</span>
+          </div>
+        </div>
+        <div class="bar">
+          <div class="info">
+            <img src="images/python.webp" class="skills-img"\>
+            <span>Python</span>
+          </div>
+        </div>
+        <div class="bar">
+          <div class="info">
+            <img src="images/SageMaker.png" class="skills-img"\>
+            <span>SageMaker</span>
+          </div>
+        </div>
+        <div class="bar">
+          <div class="info">
+            <img src="images/Lambda.png" class="skills-img"\>
+            <span>AWS Lambda</span>
+          </div>
+        </div>
+       
+        <div class="bar">
+          <div class="info">
+            <img src="images/aws.webp" class="skills-img"\>
+            <span>AWS</span>
+          </div>
+        </div>
+        
+        <div class="bar">
+          <div class="info">
+            <img src="images/c++.webp" class="skills-img"\>
+            <span>C++/C</span>
+          </div>
+        </div>
+        <div class="bar">
+          <div class="info">
+            <img src="images/java.webp" class="skills-img"\>
+            <span>Java</span>
+          </div>
+        </div>
+      </div>
 
+    </div>
+  </section>
+
+  <section class="education" id="education">
+    <h2 class="heading">
+      Education & Certifications 
+    </h2>
+    <div class ="timeline">
+      <div class="container right">
+        <div class="content">
+         <div class="tag">
+           <h1>Carleton University</h1>
+         </div> 
+         <div class="desc">
+           <h3>Bachelor of Engineering in Software Engineering</h3>
+           <p> ◉ Expected Graduation: June 2030</p>
+           <p> ◉ Concentration in Artificial Intelligence</p>
+           <p> ◉ Women in Engineering & IT - Member</p>
+           <p class="last-para"> ◉ Artificial Intelligence Society - Technical Member</p>
+         </div>
+        </div>
+      </div>
+
+      <div class="container left">
+        <div class="content">
+         <div class="tag">
+           <h1>South Carleton High School</h1>
+         </div> 
+         <div class="desc">
+           <h3>High School Diploma</h3>
+           <p> ◉ Graduation: June 2025</p>
+           <p class="last-para"> ◉ 96.2% Overall Graduation Average</p>
+         </div>
+        </div>
+      </div>
+
+      <div class="container right">
+        <div class="content">
+         <div class="tag">
+           <h1>AWS Cloud Computing Essentials Certified</h1>
+         </div> 
+         <div class="desc">
+           <h3>Amazon Web Services</h3>
+           <p class="last-para"> ◉ Strong understanding of core AWS services, cloud architecture principles, security models, and cost-optimization strategies in scalable cloud environments </p>
+         </div>
+        </div>
+      </div>
+
+      <div class="container left">
+        <div class="content">
+         <div class="tag">
+           <h1>Quantum Computing Certification</h1>
+         </div> 
+         <div class="desc">
+           <h3>Qubit x Qubit - The Coding School</h3>
+           <p class="last-para"> ◉ Gained foundational knowledge in quantum algorithms, quantum mechanics, and real-world applications of quantum computing using Qiskit </p>
+         </div>
+        </div>
+      </div>
+
+    <!-- <div class="container right">
+        <div class="content">
+         <div class="tag">
+           <h1>$16,000 Renewable Entrance Scholarship</h1>
+         </div> 
+         <div class="desc">
+           <h3>Associated with Carleton University</h3>
+           <p class="last-para"> ◉ ($4000 x 4): Awarded to students entering Carleton University with an admission average of 95%-100% </p>
+         </div>
+        </div>
+      </div>
+
+      <div class="container left">
+        <div class="content">
+         <div class="tag">
+           <h1>Carleton University Scholarship Award</h1>
+         </div> 
+         <div class="desc">
+           <h3>Associated with Carleton University</h3>
+           <p class="last-para"> ◉ Awarded to one graduating student enrolled at Carleton University who has demonstrated outstanding academic excellence and made a meaningful impact on the university community </p>
+         </div>
+        </div>
+      </div>
+      
+      <div class="container right">
+        <div class="content">
+         <div class="tag">
+           <h1>Diplôme d’études en langue française: DELF B2 Certification</h1>
+         </div> 
+         <div class="desc">
+           <h3>Associated with République française</h3>
+           <p class="last-para"> ◉ Highest French language certification attainable through OCDSB, demonstrating advanced bilingual proficiency </p>
+         </div>
+        </div>
+      </div>
+
+      <div class="container left">
+        <div class="content">
+         <div class="tag">
+           <h1>Academic Awards</h1>
+         </div> 
+         <div class="desc">
+           <h3>Associated with South Carleton High School</h3>
+           <p>◉ French Immersion Certificate (2025)</p>
+           <p>◉ Ontario Scholar (2025)</p>
+           <p>◉ Silver Medalist (2022–2025) – Awarded for 90%+ overall average</p>
+           <p class ="last-para">◉ Subject Awards (2022–2023) – Top marks in Mathematics (99%), Religion (98%), and Geography (95%)</p>
+         </div>
+        </div>
+      </div>
+
+      <div class="container right">
+        <div class="content">
+         <div class="tag">
+           <h1>$10,000 National Scholarship</h1>
+         </div> 
+         <div class="desc">
+           <h3>Associated with French For the Future (FFF)</h3>
+           <p class="last-para"> ◉ Secured a national-level scholarship in high school </p>
+         </div>
+        </div>
+      </div>
+-->
+      
+    </div>
+  </section>
   
-  <script src="script.js"></script>
+<section class="contact" id="contact">
+  <h2 class = "heading">
+    Contact
+  </h2>
+  <form action="https://formspree.io/f/xnnzgpra" method="POST">
+    <div class="input-box">
+      <input type="text" name="name" placeholder="Name" required>
+      <input type="email" name="email" placeholder="Email" required>
+      <input type="text" name="phone" placeholder="Phone Number" required>
+      <input type="text" name="subject" placeholder="Subject">
+    </div>
+
+    <textarea class="text-area" name="message" cols="30" rows="10" placeholder="Your Message"></textarea>
+    <input type="submit" value="Send Message" class="btn">
+  </form>
+</section>
+<footer class="footer">
+ <p class="copyright">
+    Copyright © 2025 Anora Dennis | All rights reserved.
+  </p>
+</footer>
+
+  <script src="script.js">
+    -
+    
+  </script>
 </body>
 
 </html>
