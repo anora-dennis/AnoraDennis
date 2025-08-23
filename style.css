@@ -275,9 +275,15 @@ span {
 
 .projects-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(2, 1fr); /* 2 columns for large screens */
   gap: 3rem;
   align-items: stretch;
+}
+
+@media (max-width: 768px) {
+  .projects-container {
+    grid-template-columns: 1fr; /* 1 column for tablets/mobiles */
+  }
 }
 
 /* Individual Project Card */
@@ -534,6 +540,7 @@ span {
   font-size: 1.3rem;
   font-weight: 500;
   margin-left: 15px;
+  margin-bottom: 10px
 }
 
 .last-para{
