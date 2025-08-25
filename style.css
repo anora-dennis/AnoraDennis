@@ -236,6 +236,13 @@ span {
 
 
 @media (max-width: 600px) {
+  .typing-text span {
+    display: block;
+  }
+  .typing-text{
+    font-size: 24px;
+  }
+  
   .home {
     flex-direction: column;
     gap: 3rem;
@@ -433,6 +440,9 @@ span {
   margin-top: 1rem;
 }
 
+.education .right .content .h1  {
+  padding-right: 20px;
+}
 
 
 .skills-img{
@@ -450,7 +460,9 @@ span {
 
 /*education section*/
 
-.education{
+/* education section */
+
+.education {
   background: var(--second-bg-color);
 }
 
@@ -460,96 +472,69 @@ span {
   margin: 0 auto;
 }
 
-
-.education .container{
+.education .container {
   padding: 10px 40px;
   position: relative;
   background: inherit;
   width: 50%;
 }
 
-.education .container::after{
-  content: '\f501';
-  position: absolute;
-  width: 25px;
-  height: 25px;
-  right: -17px;
-  background-color: rgb(252,252,252);
-  border: 4px solid var(--main-color);
-  top: 15px;
-  border-radius: 50%;
-  z-index: 100;
-  font-size: 1.89rem;
-  text-align: center;
-  font-weight: 600;
-  font-family: "Font Awesome\ 5 Free";
-  color: rgb(90,64,64);
-  box-shadow: 0 4px 10px var(--main-color);
-  transition: 0.3s ease;
-}
-
 .education .left {
-  left:0;
+  left: 0;
 }
 
 .education .right {
   left: 50%;
-} 
+}
 
-
-.education .right::after{
-  left: -16px;
-  
+/* REMOVE THE TIMELINE ICONS */
+.education .container::after {
+  content: none !important;
+  display: none !important;
 }
 
 .education .content {
   background: var(--second-bg-color);
   position: relative;
   border-radius: 10px;
-  border: solid var(--main-color);;
+  border: solid var(--main-color);
   margin-bottom: 15px;
   box-shadow: 0 4px 10px var(--main-color);
   transition: 0.3s ease;
 }
 
-.education .content:hover{
+.education .content:hover {
   box-shadow: 0 4px 10px var(--main-color);
   transform: scale(1.06);
 }
 
-.education .content .tag{
-  font-size:1.5rem;
+.education .content .tag {
+  font-size: 1.5rem;
   padding-top: 1.5rem;
   padding-left: 1.5rem;
 }
 
-.education .content .decs{
+.education .content .desc {
   padding-bottom: 1rem;
   margin-left: 15px;
 }
 
-.education .content .desc h3{
+.education .content .desc h3 {
   font-size: 1.5rem;
   font-weight: 600;
-  margin-left: 15px;
   color: var(--main-color);
   margin-bottom: 15px;
 }
 
-.education .content .desc p{
+.education .content .desc p {
   font-size: 1.3rem;
   font-weight: 500;
-  margin-left: 15px;
-  margin-bottom: 10px
-}
-
-.last-para{
-  font-size: 1.3rem;
-  font-weight: 500;
-  margin-left: 15px;
   margin-bottom: 10px;
 }
 
+
+
+/* Responsive for mobile */
 @media (max-width: 600px) {
   .education .container {
     width: 100% !important; /* Full width */
@@ -558,13 +543,8 @@ span {
     margin-bottom: 2rem; /* Space between timeline items */
     padding-left: 30px;
   }
-
-  /* Position circle icon on the left side */
-  .education .container::after {
-    right: auto !important;
-    left: -12px; /* Adjust to align the circle */
-  }
 }
+
 
 .contact h2{
   margin-bottom: 3rem;
